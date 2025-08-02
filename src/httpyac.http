@@ -9,3 +9,15 @@ Content-Type: text/plain
 
 
 Slack link syntax: <http://domain.com/foo|foo>.
+
+POST https://slack-markdown.vercel.app/api/md2slack
+Content-Type: text/plain
+
+
+Standard link syntax [foo](http://domain.com/foo).
+
+POST https://slack-markdown.vercel.app/api/slack2md
+Content-Type: text/plain
+
+
+Slack link syntax: <http://domain.com/foo|foo>.
