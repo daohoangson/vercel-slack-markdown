@@ -1,6 +1,6 @@
 # Slack markdown API endpoints
 
-A simple API service for converting between Markdown and Slack formatting, deployed on Vercel.
+Open source, free to use API to convert Slack markdown back and forth.
 
 ## Overview
 
