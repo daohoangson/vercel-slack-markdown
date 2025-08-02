@@ -1,0 +1,11 @@
+POST http://localhost:3000/api/md2slack
+Content-Type: text/plain
+
+
+Standard link syntax [foo](http://domain.com/foo).
+
+POST http://localhost:3000/api/slack2md
+Content-Type: text/plain
+
+
+Slack link syntax: <http://domain.com/foo|foo>.
