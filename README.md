@@ -29,6 +29,18 @@ curl -X POST https://slack-markdown.vercel.app/api/slack2md \
   -d "Check out this <https://example.com|awesome link>!"
 ```
 
+### Using inside n8n workflow
+
+- Create a new HTTP Request node
+- Method: POST
+- URL: https://slack-markdown.vercel.app/api/md2slack
+- Send Body: Yes
+- Body Content Type: Raw
+- Content Type: text/plain
+- Body: use the output from your AI node
+
+In your Slack node, use `data` from the output of this HTTP request node as the Message Text.
+
 ## Development
 
 ### Prerequisites
